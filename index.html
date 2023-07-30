@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -11,30 +11,46 @@
 
     <title>404 Not Found - Dev Challenges</title>
     <link rel="stylesheet" href="./css/styles.min.css" />
+    <script src="./js/main.js" defer></script>
   </head>
-  <body class="h-screen bg-gray-dark text-gray-dark dark:text-white">
+  <body
+    class="h-screen text-gray-dark opacity-0 transition dark:bg-gray-dark dark:text-white"
+  >
     <div class="container flex min-h-full max-w-7xl flex-col gap-8 p-8">
-      <header>
-        <h1 class="text-2xl font-bold uppercase tracking-tighter">
+      <header class="flex justify-between">
+        <h1 class="text-2xl font-bold uppercase tracking-tighter transition">
           404 Not Found
         </h1>
+        <button
+          class="flex h-10 w-20 scale-75 items-center rounded-full bg-neutral-50 shadow transition duration-300 focus:outline-none"
+          id="switch-button"
+        >
+          <div
+            id="switch-toggle"
+            class="relative h-12 w-12 -translate-x-2 transform rounded-full bg-gray-dark p-1 text-white transition duration-500"
+          ></div>
+        </button>
       </header>
 
       <main
         class="mb-20 grid flex-grow auto-rows-auto grid-cols-1 place-content-center gap-8 md:mb-0 md:grid-cols-2 md:grid-rows-none md:gap-20"
       >
-        <img src="./assets/scarecrow.png" alt="" class="my-auto py-8 md:py-0" />
+        <img
+          src="./assets/scarecrow-animated.svg"
+          alt=""
+          class="my-auto py-8 md:py-0"
+        />
 
         <div class="flex flex-col items-start justify-center">
           <h2
-            class="mb-9 text-5xl font-bold leading-normal tracking-tighter md:text-6xl"
+            class="mb-9 text-5xl font-bold leading-normal tracking-tighter transition md:text-6xl"
             style="word-wrap: balance"
           >
             I have bad news for you
           </h2>
 
           <p
-            class="tracking-tighte mb-16 w-11/12 text-xl text-gray-light dark:text-neutral-200 md:w-3/4 md:text-2xl"
+            class="tracking-tighte mb-16 w-11/12 text-xl text-gray-light transition dark:text-neutral-200 md:w-3/4 md:text-2xl"
           >
             The page you are looking for might be removed or is temporarily
             unavailable
@@ -50,7 +66,7 @@
       </main>
 
       <footer>
-        <p class="text-center text-sm font-medium text-gray-x-light">
+        <p class="text-center text-sm font-medium text-gray-x-light transition">
           created by
           <a
             href="https://github.com/Danak-UY/"
