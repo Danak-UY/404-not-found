@@ -50,6 +50,7 @@ function switchTheme() {
     $switchToggle.classList.remove(...CLASSES.DARK);
     $switchToggle.classList.add(...CLASSES.LIGHT);
     $switchButton.classList.add("bg-neutral-600");
+    $switchButton.setAttribute("aria-checked", "true");
   } else {
     // Light Mode
     localStorage.setItem(THEME_KEY, THEME.LIGHT);
@@ -59,6 +60,7 @@ function switchTheme() {
     $switchToggle.classList.add(...CLASSES.DARK);
     $switchToggle.classList.remove(...CLASSES.LIGHT);
     $switchButton.classList.remove("bg-neutral-600");
+    $switchButton.setAttribute("aria-checked", "false");
   }
 }
 
@@ -66,6 +68,6 @@ switchTheme();
 $switchButton.addEventListener("click", toggleTheme);
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    document.body.classList.remove("opacity-0");
+    document.body.style.opacity = "1";
   }, 300);
 });

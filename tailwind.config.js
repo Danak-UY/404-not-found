@@ -11,6 +11,9 @@ module.exports = {
           light: "#4f4f4f",
           dark: "#333333",
         },
+        gold: {
+          DEFAULT: "#fdd05b",
+        },
       },
     },
     fontFamily: {

@@ -14,7 +14,8 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body
-    class="h-screen text-gray-dark opacity-0 transition dark:bg-gray-dark dark:text-white"
+    class="h-screen text-gray-dark transition dark:bg-gray-dark dark:text-white"
+    style="opacity: 0"
   >
     <div class="container flex min-h-full max-w-7xl flex-col gap-8 p-8">
       <header class="flex justify-between">
@@ -22,8 +23,10 @@
           404 Not Found
         </h1>
         <button
-          class="flex h-10 w-20 scale-75 items-center rounded-full bg-neutral-50 shadow transition duration-300 focus:outline-none"
+          class="flex h-10 w-20 scale-75 items-center rounded-full bg-neutral-50 shadow transition duration-300 focus:outline focus:outline-offset-4 focus:outline-gold"
           id="switch-button"
+          aria-label="Toggle dark mode"
+          aria-checked="false"
         >
           <div
             id="switch-toggle"
@@ -58,7 +61,7 @@
 
           <a
             href="/"
-            class="self-start bg-gray-dark px-10 py-6 text-sm font-bold uppercase text-white transition ease-in-out hover:scale-105 hover:bg-neutral-700 hover:shadow-sm focus:bg-neutral-800 dark:bg-white dark:text-gray-dark dark:hover:bg-neutral-50 dark:focus:bg-neutral-100"
+            class="self-start bg-gray-dark px-10 py-6 text-sm font-bold uppercase text-white transition ease-in-out hover:scale-105 hover:bg-neutral-700 hover:shadow-sm focus:bg-neutral-800 focus:outline focus:outline-offset-2 focus:outline-gold dark:bg-white dark:text-gray-dark dark:hover:bg-neutral-50 dark:focus:bg-neutral-100"
           >
             Back to homepage
           </a>
@@ -70,7 +73,7 @@
           created by
           <a
             href="https://github.com/Danak-UY/"
-            class="font-bold hover:text-neutral-400 dark:hover:text-neutral-200"
+            class="font-bold hover:text-neutral-400 focus:outline focus:outline-offset-2 focus:outline-gold dark:hover:text-neutral-200"
             target="_blank"
           >
             @Danak-UY
@@ -78,7 +81,7 @@
           -
           <a
             href="https://devchallenges.io/"
-            class="hover:text-neutral-400 dark:hover:text-neutral-200"
+            class="hover:text-neutral-400 focus:outline focus:outline-offset-2 focus:outline-gold dark:hover:text-neutral-200"
             target="_blank"
           >
             devChallenges.io
