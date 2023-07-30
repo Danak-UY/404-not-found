@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body class="h-screen text-gray-dark">
-    <div class="container flex h-full max-w-7xl flex-col gap-8 p-8">
+    <div class="container flex min-h-full max-w-7xl flex-col gap-8 p-8">
       <header>
         <h1 class="text-2xl font-bold uppercase tracking-tighter">
           404 Not Found
@@ -21,26 +21,28 @@
       </header>
 
       <main
-        class="grid flex-grow grid-cols-1 grid-rows-2 place-content-center gap-20 md:grid-cols-2 md:grid-rows-none"
+        class="mb-20 grid flex-grow auto-rows-auto grid-cols-1 place-content-center gap-8 md:mb-0 md:grid-cols-2 md:grid-rows-none md:gap-20"
       >
-        <img src="./assets/scarecrow.png" alt="" class="my-auto" />
+        <img src="./assets/scarecrow.png" alt="" class="my-auto py-8 md:py-0" />
 
         <div class="flex flex-col items-start justify-center">
           <h2
-            class="mb-9 text-6xl font-bold leading-normal tracking-tighter"
+            class="mb-9 text-5xl font-bold leading-normal tracking-tighter md:text-6xl"
             style="word-wrap: balance"
           >
             I have bad news for you
           </h2>
 
-          <p class="tracking-tighte mb-16 text-2xl text-gray-light md:w-3/4">
+          <p
+            class="tracking-tighte mb-16 w-11/12 text-xl text-gray-light md:w-3/4 md:text-2xl"
+          >
             The page you are looking for might be removed or is temporarily
             unavailable
           </p>
 
           <a
             href="/"
-            class="self-start bg-gray-dark px-10 py-6 text-sm font-bold uppercase text-white"
+            class="self-start bg-gray-dark px-10 py-6 text-sm font-bold uppercase text-white transition ease-in-out hover:scale-105 hover:bg-neutral-700 hover:shadow-sm focus:bg-neutral-800"
           >
             Back to homepage
           </a>
