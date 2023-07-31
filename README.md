@@ -29,6 +29,7 @@
 - [Overview](#overview)
 - [Built With](#built-with)
 - [Features](#features)
+- [UserStories](#user-stories)
 
 <!-- OVERVIEW -->
 
@@ -47,3 +48,7 @@
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY) was to build an application to complete the given user stories.
+
+### User stories
+
+- I can see a page following the given design
