@@ -41,8 +41,8 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [TailwindCSS](https://tailwindcss.com/)
-- [SVGator](https://www.svgator.com/)
+- [TailwindCSS](https://tailwindcss.com/) - CSS Styling
+- [SVGator](https://www.svgator.com/) - SVG animation
 
 ## Features
 
